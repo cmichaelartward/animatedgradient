@@ -373,7 +373,7 @@ function normalizeColor(hexCode) {
             u_vertDeform: new this.minigl.Uniform({
                 value: {
                     incline: new this.minigl.Uniform({
-                        value: Math.sin(this.angle) / Math.cos(this.angle)
+                        value: Math.sin(this.angle) / Math.tan(this.angle)
                     }),
                     offsetTop: new this.minigl.Uniform({
                         value: -.5
