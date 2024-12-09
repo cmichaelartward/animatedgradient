@@ -316,7 +316,7 @@ function normalizeColor(hexCode) {
         },
         this.conf = {
             presetName: "",
-            wireframe: false,
+            wireframe: true,
             density: [.06, .16],
             zoom: 1,
             rotation: 0,
@@ -373,7 +373,7 @@ function normalizeColor(hexCode) {
             u_vertDeform: new this.minigl.Uniform({
                 value: {
                     incline: new this.minigl.Uniform({
-                        value: Math.sin(this.angle) / Math.tan(this.angle)
+                        value: Math.sin(this.angle) / Math.cos(this.angle)
                     }),
                     offsetTop: new this.minigl.Uniform({
                         value: -.5
