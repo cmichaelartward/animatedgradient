@@ -320,7 +320,7 @@ function normalizeColor(hexCode) {
             density: [.06, .16],
             zoom: 1,
             rotation: 2,
-            playing: true
+            playing: false
         }, 
         document.querySelectorAll("canvas").length < 1 ? console.log("DID NOT LOAD HERO STRIPE CANVAS") : (
           
@@ -423,7 +423,7 @@ function normalizeColor(hexCode) {
                     type: "vec2"
                 }),
                 noiseSpeed: new this.minigl.Uniform({
-                    value: 111 + .3 * e
+                    value: 11 + .3 * e
                 }),
                 noiseFlow: new this.minigl.Uniform({
                     value: 6.5 + .3 * e
